@@ -1,3 +1,39 @@
- [{"name" : "Ashwin", "age" : "20"},{"name" : "Abhinandan", "age" : "20"}]
+/*creamos el json que contine los productos*/
 
- 
+[
+    {
+     "producto":"Cal x30kg",
+     "precio":780,
+     "url":"undefined"
+    },
+    {
+        "producto":"Cemento x50kg",
+        "precio":1230,
+        "url":"undefined"
+    },
+    {
+        "producto":"Piedras",
+        "precio":8700,
+        "url":"undefined"
+    },
+    {
+        "producto":"Arena",
+        "precio":4700,
+        "url":"undefined"
+    },
+    {
+        "producto":"Ladrillos",
+        "precio":28000,
+        "url":"undefined"
+    },
+    {
+        "producto":"Ladrillos Huecos",
+        "precio":780,
+        "url":"undefined"
+    },
+    {
+        "producto":"Hierro del 8",
+        "precio":780,
+        "url":"undefined"
+    }
+    ]

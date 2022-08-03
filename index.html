@@ -12,65 +12,13 @@
 <body>
     <header>
         <nav>
-            <ul>
-              
-                <li class="lista" id="almacen">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
-                        <span class="texto">Almacen</span>
-                    </a>
-                </li>
-                <li class="lista" id="verduleria">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="nutrition-outline"></ion-icon></span>
-                        <span class="texto">Verduleria</span>
-                    </a>
-                </li>
-
-              
-                
-                <li class="lista" id="limpieza">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="archive-outline"></ion-icon></span>
-                        <span class="texto">Limpieza</span>
-                    </a>
-                </li>
-
-                <li class="lista" id="lacteos">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="snow-outline"></ion-icon></span>
-                        <span class="texto">Lacteos</span>
-                    </a>
-                </li>
-
-                <li class="lista" id="bebidas">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="beer-outline"></ion-icon></span>
-                        <span class="texto">Bebidas</span>
-                    </a>
-                </li>
-
-                <li class="lista" id="carniceria">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="beer-outline"></ion-icon></span>
-                        <span class="texto">Carniceria</span>
-                    </a>
-                </li>
-
-                <li class="lista" id="otros">
-                    <a href="#containerSeccion">
-                        <span class="icon"><ion-icon name="add-circle-outline"></ion-icon></span>
-                        <span class="texto">Otros</span>
-                    </a>
-                </li>
-                
-            </ul>
+            <h3>Materiales David</h3>
         </nav>
     </header>
 
     <div class="imagen">
         <img src="./img/market.png" alt="">
-        <h3 class="cartel">Kiosco las Chicas</h3>
+        <h3 class="cartel">Materiales David</h3>
     </div>
     
     <div class="container" id="container">
@@ -119,7 +67,7 @@
                     <span class="iconSeccion">
                         <ion-icon name="storefront-outline"></ion-icon>
                     </span>
-                    Almacen
+                    Nuestro Catalogo
                 </h2>
 
                 
@@ -255,36 +203,7 @@
 
                     $('#containerSeccion').load('almacen.html');
 
-                    $('#almacen').click(function(){
-                $('#containerSeccion').load('almacen.html');
-                console.log("contando.....")
-                    });                    
-
-                $('#verduleria').click(function(){
-                $('#containerSeccion').load('verduleria.html');
-                    });
-
-                    $('#limpieza').click(function(){
-                $('#containerSeccion').load('limpieza.html');
-                    });
-
-                    $('#lacteos').click(function(){
-                $('#containerSeccion').load('lacteos.html');
-                    });
-
-                    $('#bebidas').click(function(){
-                $('#containerSeccion').load('bebidas.html');
-                    });
-
-                    $('#carniceria').click(function(){
-                $('#containerSeccion').load('carniceria.html');
-                    });
-
-                    $('#otros').click(function(){
-                $('#containerSeccion').load('otros.html');
-                    });
-
-
+               
 
 
                 });
