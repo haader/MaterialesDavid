@@ -36,9 +36,9 @@ client.addEventListener("readystatechange", () => {
     
   });
 
-client.open("GET", "https://ouaghhcihsjczmtgkqdg.supabase.co/rest/v1/almacen", true);
-client.setRequestHeader("apikey","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91YWdoaGNpaHNqY3ptdGdrcWRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTc4MzMwNDYsImV4cCI6MTk3MzQwOTA0Nn0.OqI0wHuqWO97OKTk3tF0XQhwLjPXrtzz0GJe_ofbkOM");
-client.setRequestHeader("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91YWdoaGNpaHNqY3ptdGdrcWRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTc4MzMwNDYsImV4cCI6MTk3MzQwOTA0Nn0.OqI0wHuqWO97OKTk3tF0XQhwLjPXrtzz0GJe_ofbkOM");
+client.open("GET", "https://wwomxcbnhczomvlfkjca.supabase.co/rest/v1/productos?", true);
+client.setRequestHeader("apikey","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3b214Y2JuaGN6b212bGZramNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTk1NDM4NjYsImV4cCI6MTk3NTExOTg2Nn0.GmmsvPpAlMXwZhbM1iLrSsslJ5MNd11dXOcN3q3dVSk");
+client.setRequestHeader("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3b214Y2JuaGN6b212bGZramNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTk1NDM4NjYsImV4cCI6MTk3NTExOTg2Nn0.GmmsvPpAlMXwZhbM1iLrSsslJ5MNd11dXOcN3q3dVSk");
 client.send();
 
 
@@ -56,7 +56,13 @@ function RenderizarALMACEN(){
     setTimeout(()=>{
     
         myAlmacen.forEach(element => {
-    document.getElementById("json").innerHTML+='<div class="child" id="'+cont+'"><img src="./Almacen/almacen.webp" alt=""><div><h3 id="pid'+cont+'">'+myAlmacen[cont].name+'</h3><button " onclick="comprar0('+cont+')">Comprar '+myAlmacen[cont].precio+'$</button></div></div>';    
+    document.getElementById("json").innerHTML+=`<div class="child" id="${cont}">
+                                                    <img src="./imgProductos/${myAlmacen[cont].url}" alt="">
+                                                            <div>
+                                                                <h3 id="pid${cont}">${myAlmacen[cont].producto}</h3>
+                                                                <button " onclick="comprar0(${cont})">Comprar ${myAlmacen[cont].precio}$</button>
+                                                            </div>
+                                                </div>`;    
     cont++;
 })
 document.getElementById("load").remove() ;

@@ -1,2 +1,0 @@
-var Lacteos = '[{"name" : "Lacteos-1", "precio" : 10, "unidades":0},{"name" : "Lacteos-2", "precio" : 20, "unidades":0},{"name" : "Lacteos-3", "precio" : 30, "unidades":0}]';
- myLacteos= JSON.parse(Lacteos);
