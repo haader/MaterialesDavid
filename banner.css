@@ -1,0 +1,30 @@
+nav
+{
+    border-bottom: 1px solid black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background: linear-gradient(45deg, #ed5176, #772633);
+    z-index: 2;
+    overflow:hidden;
+    padding: 0;
+    
+  
+}
+nav ul{
+    margin-bottom: 0.5rem;
+    padding: 0;
+    animation: mover 20s infinite linear;
+    
+}
+nav ul span{
+    margin-left: 1rem;
+    
+}
+@keyframes mover{
+from{margin-left: 0px;}
+to{margin-left: -240%;}
+}

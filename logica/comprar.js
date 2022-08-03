@@ -14,10 +14,10 @@ if(uni==0){
             //comprobamos el estado de BOOLEANLISTACOMPRA 
             //esto es para ir cambiando los colores de las row
         if(booleanListaCompra==false){
-            document.getElementById("listacompra").innerHTML+='<tr class="'+booleanListaCompra+'" id="tablerow'+seccion+id+'"><td>'+myAlmacen[id].name+'</td><td>'+myAlmacen[id].precio+'$</td><td id="unidades'+seccion+id+'">'+myAlmacen[id].unidades+'</td><td id="subtotal'+seccion+id+'">'+subtotal+'$</td><td class="tdbuttons"><button class="btnEliminar" onclick="EliminarProducto0('+id+')">Eliminar</button><button class="btnAgregar" onclick="comprar0('+id+')">Agregar</button></td></tr>';
+            document.getElementById("listacompra").innerHTML+='<tr class="'+booleanListaCompra+'" id="tablerow'+seccion+id+'"><td>'+myAlmacen[id].producto+'</td><td>'+myAlmacen[id].precio+'$</td><td id="unidades'+seccion+id+'">'+myAlmacen[id].unidades+'</td><td id="subtotal'+seccion+id+'">'+subtotal+'$</td><td class="tdbuttons"><button class="btnEliminar" onclick="EliminarProducto0('+id+')">Eliminar</button><button class="btnAgregar" onclick="comprar0('+id+')">Agregar</button></td></tr>';
             booleanListaCompra=true;
         }else{
-            document.getElementById("listacompra").innerHTML+='<tr class="'+booleanListaCompra+'" id="tablerow'+seccion+id+'"><td>'+myAlmacen[id].name+'</td><td>'+myAlmacen[id].precio+'$</td><td id="unidades'+seccion+id+'">'+myAlmacen[id].unidades+'</td><td id="subtotal'+seccion+id+'">'+subtotal+'$</td><td class="tdbuttons"><button class="btnEliminar" onclick="EliminarProducto0('+id+')">Eliminar</button><button class="btnAgregar" onclick="comprar0('+id+')">Agregar</button></td></tr>';
+            document.getElementById("listacompra").innerHTML+='<tr class="'+booleanListaCompra+'" id="tablerow'+seccion+id+'"><td>'+myAlmacen[id].producto+'</td><td>'+myAlmacen[id].precio+'$</td><td id="unidades'+seccion+id+'">'+myAlmacen[id].unidades+'</td><td id="subtotal'+seccion+id+'">'+subtotal+'$</td><td class="tdbuttons"><button class="btnEliminar" onclick="EliminarProducto0('+id+')">Eliminar</button><button class="btnAgregar" onclick="comprar0('+id+')">Agregar</button></td></tr>';
             booleanListaCompra=false;
         }
         

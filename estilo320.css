@@ -1,6 +1,6 @@
 
 :root{
-    --top:5rem;
+    --top:2rem;
 }
 
 /*-------media menos de 500 px---------*/
@@ -16,7 +16,7 @@
     header
     nav
     ul{
-        display: flex;
+        
         height:var(--top);
         position: relative;
         flex-wrap: wrap;
@@ -54,6 +54,53 @@
     }
     /****HOW TO BUY****/
 
+  
+    
+
+    .container .explicacion{
+        border: none;
+    }
+    .container .explicacion .paso{
+        display: flex;
+        flex-direction: column;
+        width: 7rem;
+        height: 10rem;
+        
+    }
+
+    .container .explicacion .paso figure{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        width: 7rem;
+        height: 8rem;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+    .container .explicacion .paso figure img{
+        position: relative;
+        width: 100%;
+        
+        
+    }
+
+
+
+
+    .container .explicacion .paso text{
+        top:8rem;
+        height:2rem;
+        position:relative;
+        justify-content: center;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column-reverse;
+        background: linear-gradient(45deg, #8b008b, transparent);
+    }
+
     .Number {
         
         position: absolute;
@@ -64,23 +111,11 @@
         width: 1rem;
         
     }
-    
 
-    .container .explicacion{
-        border: none;
-    }
-    .container .explicacion .paso{
-    
-        width: 7rem;
-        height: 8rem;
-    }
-    .container .explicacion .paso text{
-        height: -webkit-fill-available;
-        font-size: 0.7rem;
-        display: flex;
-        flex-direction: column-reverse;
-        background: linear-gradient(45deg, #8b008b, transparent);
-    }
+
+
+
+
 
     /*TARJETAS >500px*/
 
@@ -118,10 +153,8 @@
     .json 
     .child 
     button{
-        background: #8b008b;
-        height: 2rem;
+        
         font-family: monospace;
-        font-size: 1rem;
-        color: #df9a9a;;
+      
     }
 }
