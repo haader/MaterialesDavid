@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="./factura.css">
+    <link rel="stylesheet" href="./factura320.css">
+</head>
+<body>
+
+    <div class="facturatitle">
+
+        <img src="./img/market.png" alt="">
+        
+        <div class="titleKiosco">
+            <h3>Mi_Kiosco</h3><h4></h4>
+        </div>
+
+       
+
+    </div>
+
+    <div class="datosCompradorTitle">
+        <h3>Datos del Comprador</h3>
+    </div>
+    <table class="datosComprador" id="datosComprador">
+        
+        <thead>
+            <tr>
+                <td>Nombre:</td>
+                <td>Dirección:</td>
+                <td>Metodo de pago:</td>
+            </tr>
+        </thead>
+        
+        <tbody id="datosCompradorRow">
+            <tr >
+                <td>Juan Perez</td>
+                <td>Calle Falsa 123</td>
+                <td>Efectivo</td>
+            </tr>    
+        </tbody>
+        
+    </table>
+   
+   <div class="contenedor">
+
+                        <table class="listacompra" id="tabla" >
+
+                            <thead>
+                                <tr>
+                                    <td>Productos</td>
+                                    <td>Precio Unitario</td>
+                                    <td>Unidades</td>
+                                    <td>Sub-total</td>
+                                    <td>Estado</td>
+                                </tr>
+                            </thead>
+                            <tbody id="listacompra">
+
+                            </tbody>
+                        </table>
+
+
+                        <div class="total" id="totalid">
+                            
+                            <text>Total: <text id="total"></text>$</text>
+
+                        </div>
+
+
+   </div>
+   <script src="./json/almacen.js"></script>
+   <script src="./json/limpieza.js"></script>
+   <script src="./json/lacteos.js"></script>
+   <script src="./json/bebidas.js"></script>
+   <script src="./json/carniceria.js"></script>
+   <script src="./json/verduleria.js"></script>
+   <script src="./json/otros.js"></script>
+    <script src="./logicaFactura/factura.js"></script>    
+</body>
+
+</html>

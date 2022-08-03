@@ -1,0 +1,2 @@
+var Carniceria = '[{"name" : "Carniceria-1", "precio" : 10, "unidades":0},{"name" : "Carniceria-2", "precio" : 20, "unidades":0},{"name" : "Carniceria-3", "precio" : 30, "unidades":0}]';
+ myCarniceria= JSON.parse(Carniceria);

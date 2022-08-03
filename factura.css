@@ -1,0 +1,124 @@
+/*title */  
+  
+.facturatitle
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+.facturatitle
+img
+{
+    border-radius: 50%;
+    border: 2px solid red;
+    height: 10rem;
+    width: 10rem;
+    
+}
+.facturatitle
+.titleKiosco
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    width: 10rem;
+    
+}
+.facturatitle
+.datosComprador
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid black;
+    width: 20rem;
+}
+.facturatitle
+.datosComprador
+h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*CUENTA*/
+  .total
+  {
+      width: 100%;
+      height: auto;
+  }
+
+  .contenedor
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #tabla
+  {
+      border: 1px solid red;
+      display: block;
+      position: relative;
+      width: auto;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+
+  }
+
+  
+                            .listacompra
+                            .true
+                            {
+                                background: chocolate;
+                            }
+                            
+                            .listacompra
+                            .false
+                            {
+                                background: orange;
+                            }
+
+                            
+                            .listacompra
+                            td
+                            {
+                                border: 1px solid green;
+                            }
+
+                            .listacompra 
+                            thead 
+                            td
+                            {
+                                font-weight: 700;
+                            }
+ 
+ .total
+ {
+    display: flex;
+    position: relative;
+    border: 2px solid pink;
+    width: auto;
+    font-weight: 600;
+ }
+

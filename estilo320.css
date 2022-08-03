@@ -1,0 +1,127 @@
+
+:root{
+    --top:5rem;
+}
+
+/*-------media menos de 500 px---------*/
+@media screen and (max-width: 500px) {
+    
+    header
+    nav{
+        display: flex;
+        height:var(--top);
+        
+    }
+
+    header
+    nav
+    ul{
+        display: flex;
+        height:var(--top);
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    
+    }
+
+    header
+    nav
+    ul
+    .lista{
+        height:2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: auto;
+
+    }
+
+    .containerPanel
+    {
+        top:var(--top);
+        width: 98%;
+
+    }
+    .imagen img{
+        top: 4rem;
+        height: 80%;
+    }
+
+    .container{
+        margin-left: 2%;
+        
+    }
+    /****HOW TO BUY****/
+
+    .Number {
+        
+        position: absolute;
+        border-radius: 50%;
+        color: black;
+        background: white;
+        height: 1rem;
+        width: 1rem;
+        
+    }
+    
+
+    .container .explicacion{
+        border: none;
+    }
+    .container .explicacion .paso{
+    
+        width: 7rem;
+        height: 8rem;
+    }
+    .container .explicacion .paso text{
+        height: -webkit-fill-available;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column-reverse;
+        background: linear-gradient(45deg, #8b008b, transparent);
+    }
+
+    /*TARJETAS >500px*/
+
+    .container
+    .json 
+    .child{
+        height: 13rem;
+    }
+    .container
+    .json 
+    .child 
+    img{
+        height: 10rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    .container
+    .json 
+    .child 
+    div{
+        height: 3rem;
+        
+    }
+                    .container
+                    .json 
+                    .child 
+                    div
+                    h3{
+                        height: 1rem;
+                        
+                    }
+    .container
+    .json 
+    .child 
+    button{
+        background: #8b008b;
+        height: 2rem;
+        font-family: monospace;
+        font-size: 1rem;
+        color: #df9a9a;;
+    }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiosco</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./estilo320.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              
+                <li class="lista" id="almacen">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
+                        <span class="texto">Almacen</span>
+                    </a>
+                </li>
+                <li class="lista" id="verduleria">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="nutrition-outline"></ion-icon></span>
+                        <span class="texto">Verduleria</span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="lista" id="limpieza">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="archive-outline"></ion-icon></span>
+                        <span class="texto">Limpieza</span>
+                    </a>
+                </li>
+
+                <li class="lista" id="lacteos">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="snow-outline"></ion-icon></span>
+                        <span class="texto">Lacteos</span>
+                    </a>
+                </li>
+
+                <li class="lista" id="bebidas">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="beer-outline"></ion-icon></span>
+                        <span class="texto">Bebidas</span>
+                    </a>
+                </li>
+
+                <li class="lista" id="carniceria">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="beer-outline"></ion-icon></span>
+                        <span class="texto">Carniceria</span>
+                    </a>
+                </li>
+
+                <li class="lista" id="otros">
+                    <a href="#containerSeccion">
+                        <span class="icon"><ion-icon name="add-circle-outline"></ion-icon></span>
+                        <span class="texto">Otros</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="imagen">
+        <img src="./img/market.png" alt="">
+        <h3 class="cartel">Kiosco las Chicas</h3>
+    </div>
+    
+    <div class="container" id="container">
+
+        <h3 class="howToBuy">¿Como comprar?</h3>
+
+        <div class="explicacion">
+                
+                <div class="paso">
+                    <img src="./img/1.png" alt="">
+                    <text>Navega y Compra lo que Necesites</text>
+                    <span class="Number">1</span>
+                </div>
+                <div class="paso">
+                    <img src="./img/2.png" alt="">
+                    <text>Elije: metodo de pago</text>
+                    <span class="Number">2</span>
+                </div>
+                <div class="paso">
+                    <img src="./img/3.png" alt="">
+                    <text>Preparamos tú pedido y te avisamos! </text>
+                    <span class="Number">3</span>
+                </div>
+                <div class="paso">
+                    <img src="./img/4.png" alt="">
+                    <text>Retira tú compra SIN HACER FILA!!</text>
+                    <span class="Number">4</span>
+                </div>
+        </div>
+
+        <a class="LinkVideo" href="./video.html">            
+                    <div class="divLinkVideo">
+                        <ion-icon class="iconoVideo" name="videocam-outline"></ion-icon>
+                        <text>
+                            Video: ¿Como Comprar?
+                        </text>
+                    </div>
+            
+        </a>
+
+        <div class="containerSeccion" id="containerSeccion">
+           
+            <div id="json" class="json">
+                
+                <h2 class="seccion">
+                    <span class="iconSeccion">
+                        <ion-icon name="storefront-outline"></ion-icon>
+                    </span>
+                    Almacen
+                </h2>
+
+                
+               
+            </div>
+    
+
+        </div>
+       
+       
+       
+
+    </div>
+
+    <div class="containerPanel" id="containerPanel">
+
+        <div class="iconChango" id="iconChango" onclick="clickCarrito()">
+            <ul>
+                <li>
+                    <span id="icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        
+                    </span>
+                    <span id="carritoCont">0</span>
+                    <span id="carritoTotal">0$</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="containerLista" id="containerLista">
+
+                                    <h3>Compra Actual</h3>
+                                    
+                                    <table class="listacompra" id="tabla" >
+
+                                        <thead>
+                                            <tr>
+                                                <td>Productos</td>
+                                                <td>Precio Unitario</td>
+                                                <td>Unidades</td>
+                                                <td>Sub-total</td>
+                                                <td>Accionar</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="listacompra">
+                            
+                                        </tbody>
+                                    </table>
+                            
+                                
+                                    <div class="total" id="totalid">
+                                        
+                                        <text>Total: <text id="total"></text>$</text>
+
+                                        <button class="btnBorrar" id="btnborrarTodo" onclick="borrarTodo()">Borrar Todo</button>
+                                        <br>
+                                        <hr>
+                                        
+                                        <h3>Datos del Comprador</h3>
+                                        <div class="contname"><text class="titlename">Nombre:</text><input class="input" id="inputnameUsuario" type="text" placeholder="ingrese su nombre" value="" onkeyup="validarNameComprador()"></input></div>
+                                        <br>
+                                        <hr>
+                                        <!--RADIO BOTONES-->
+                                        <div class="metodoPago" id="metodoPago">
+
+                                            <h4>Metodo de Pago</h4>
+                                            <!--
+                                                <input id="incash" name="metodo_pago" type="radio" value="Efectivo" onclick="PagoCash()">
+                                            <text onclick="PagoCash()">Efectivo</text>
+
+                                            <input id="inmp" name="metodo_pago" type="radio" value="Mercado Pago" onclick="PagoMP()">
+                                            <text onclick="PagoMP()">Mercado Pago</text>
+                                            -->
+
+                                        </div>
+                                        <div class="metodoPagoCash" id="divabono"></div>
+                                        
+                                        <hr>
+                                        <div class="envio" id="metodoEntrega">
+
+                                            <h4>Metodos de Entrega</h4>
+
+                                        </div>
+                                        <hr>
+                                        <div id="datosDireccion"><!--div de entrega-->
+
+                                        </div>
+
+                                        <button id="btnContinuar" class="btnContinuar" onclick="Continuar()"><a id="link">Continuar</a></button>
+
+                                        <div class="enviarPedido" id="enviarPedido">
+
+                                        </div>
+                                        
+                                    
+                                        <br>
+                 
+                                      
+                                    </div>
+                    
+                                    <br>
+                                    <br>
+                                    <br>
+        </div>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="data.json"></script>
+    <!--Colocamos los archivos de la carpeta LOGICA-->
+    <script type="text/javascript" src="./logica/variables.js"></script>
+    <script type="text/javascript" src="./logica/contadorProductos.js"></script>
+    <script type="text/javascript" src="./logica/logicaGeneral.js"></script>
+    <script type="text/javascript" src="./logica/eliminarProducto.js"></script>
+    <script type="text/javascript" src="./logica/comprar.js"></script>
+    <script type="text/javascript" src="./logica/carrito.js"></script>
+    <script type="text/javascript" src="./logica/calcularSubTotal.js"></script>
+    <script type="text/javascript" src="./logica/total.js"></script>
+    <script type="text/javascript" src="./logica/tagSeleccionado.js"></script>
+    
+
+
+    <script type="text/javascript" src="./jquery.js"></script>
+    <!--COLOCAMOS LOS ICONOS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+            /*AL HACER CLIC EN #JAVA CARGAMOS LA SECCION JAVA*/
+                $(document).ready(function () {
+
+                    $('#containerSeccion').load('almacen.html');
+
+                    $('#almacen').click(function(){
+                $('#containerSeccion').load('almacen.html');
+                console.log("contando.....")
+                    });                    
+
+                $('#verduleria').click(function(){
+                $('#containerSeccion').load('verduleria.html');
+                    });
+
+                    $('#limpieza').click(function(){
+                $('#containerSeccion').load('limpieza.html');
+                    });
+
+                    $('#lacteos').click(function(){
+                $('#containerSeccion').load('lacteos.html');
+                    });
+
+                    $('#bebidas').click(function(){
+                $('#containerSeccion').load('bebidas.html');
+                    });
+
+                    $('#carniceria').click(function(){
+                $('#containerSeccion').load('carniceria.html');
+                    });
+
+                    $('#otros').click(function(){
+                $('#containerSeccion').load('otros.html');
+                    });
+
+
+
+
+                });
+
+                let client = new XMLHttpRequest();
+
+    </script>
+
+</body>
+</html>
+<!--
+<a style="margin-top: 4rem; width:5rem; height:2rem;"link" href="http://127.0.0.1:5500/factura.html?taco=2&name=melina%20narvaez&dir=marcos%20del%20pont%20725&mp=false&send=false&---clp=4&can=1&id=2&---clp=0&can=5&id=2" target="_blank">ir a Factura</a>
+<li class="lista">
+                    <a href="compra.html?pro=pan&can=10&pre=200" target="_blank">
+                        
+                        <span class="texto">PROBANDO</span>
+                    </a>
+                </li>
+
+-->

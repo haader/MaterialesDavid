@@ -1,0 +1,34 @@
+
+<div id="json" class="json">
+            
+    <h2 class="seccion">
+        
+        <span class="iconSeccion">
+            
+            <ion-icon name="snow-outline"></ion-icon>
+            
+        </span>Lacteos</h2>
+   
+</div>
+
+<script src="./json/lacteos.js"></script>
+<script>
+    //declaramos la seccion donde nos encontramos
+    seccion=3;
+
+    /*declaramos el ID=0 (almacen 0 a 100)*/
+    var id=0;//empezamos a contar en 0 cada vez que
+            //la página es llamada para renderizar los productos de la seccion
+    
+    
+    
+    
+    /*dom: creo la lista de lacteos */
+    /*dom: creo la lista de lacteos */
+    cont=0;/* contador del JSON (array) GENERA EL ID que se le asigna a la tarjeta */
+    myLacteos.forEach(element => {
+        document.getElementById("json").innerHTML+='<div class="child" id="'+cont+'"><img src="./Lacteos/lacteos.webp" alt=""><div><h3 id="pid'+cont+'">'+myLacteos[cont].name+'</h3><button " onclick="comprar3('+cont+')">Comprar '+myLacteos[cont].precio+'$</button></div></div>';    
+        cont++;
+    });
+    
+    </script>

@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.title{
+
+    color: darkmagenta;
+    font-size: xx-large;
+    text-shadow: 3px 1px black;
+}
+.video{
+    border: 2px solid black;
+    height: 70%;
+    width:auto;
+
+}
+.btnVolver{
+    background: darkmagenta;
+    border-radius: 10px;
+
+}
