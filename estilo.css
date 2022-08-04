@@ -719,8 +719,11 @@ li
     justify-content: center;
 }
 .contname
-.input{
+.inputName{
     margin-left: 2rem;
+    height:1rem;
+    border-radius: 3px;
+    background-color: #f0ffffe0;
 }
 .total 
 .titlename{
@@ -920,7 +923,7 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    background-color: #8b008b;
+    background-color: #f0ffffe0;
     margin-left: 5%;
     margin-right: 5%;
     border-top-left-radius: 10px;

@@ -16,7 +16,7 @@
 seccion=0;
 var id=0;//empezamos a contar en 0 cada vez que
         //la página es llamada para renderizar los productos de la seccion
-cont=0;/* contador del JSON (array) GENERA EL ID que se le asigna a la tarjeta */
+//cont=0;/* contador del JSON (array) GENERA EL ID que se le asigna a la tarjeta */
 var respuesta;
 
 console.log("vuelta:")
@@ -79,7 +79,7 @@ document.getElementById("load").remove() ;
 };
 
 function RenderizarProductos(){
-    cont=0;
+   // cont=0;
 
     division.forEach(element=>{
     
@@ -94,14 +94,14 @@ function RenderizarProductos(){
 
             if(myAlmacen[index].division==element){
 
-                document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${cont}">
-                                                            <img src="./imgProductos/${myAlmacen[index].url}" alt="./imgProductos/404.png">
+                document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${index}">
+                                                            <img src="./imgProductos/${myAlmacen[index].url}" alt="Error al cargar la imagen">
                                                                     <div>
-                                                                        <h3 id="pid${cont}">${myAlmacen[index].producto}</h3>
-                                                                        <button " onclick="comprar0(${cont})">Comprar ${myAlmacen[index].precio}$</button>
+                                                                        <h3 id="pid${index}">${myAlmacen[index].producto}</h3>
+                                                                        <button " onclick="comprar0(${index})">Comprar ${myAlmacen[index].precio}$</button>
                                                                     </div>
                                                         </div>`;    
-            cont++;
+            //cont++;
 
             }
             
