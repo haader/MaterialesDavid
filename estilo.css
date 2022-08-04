@@ -176,6 +176,18 @@ text{
     
     
 }
+/*Atencion*/
+
+.atencion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    border: 1px solid black;
+}
+.atencion p{
+    text-align: center;
+}
 
 
 /*JSON*/
