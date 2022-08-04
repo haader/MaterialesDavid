@@ -95,7 +95,7 @@ function RenderizarProductos(){
             if(myAlmacen[index].division==element){
 
                 document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${cont}">
-                                                            <img src="./imgProductos/${myAlmacen[index].url}" alt="./404.png">
+                                                            <img src="./imgProductos/${myAlmacen[index].url}" alt="./imgProductos/404.png">
                                                                     <div>
                                                                         <h3 id="pid${cont}">${myAlmacen[index].producto}</h3>
                                                                         <button " onclick="comprar0(${cont})">Comprar ${myAlmacen[index].precio}$</button>
