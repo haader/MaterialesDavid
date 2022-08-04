@@ -12,7 +12,7 @@ var respuesta;
 
 console.log("vuelta:")
     //LLAMADA XMLHTTPREQUEST
-    document.getElementById("json").innerHTML+=`<div class="loading" id="load"></div>`;
+    document.getElementById("contenedorProductos").innerHTML+=`<div class="loading" id="load"></div>`;
 
 client.addEventListener("readystatechange", () => {
 
@@ -56,7 +56,7 @@ function RenderizarALMACEN(){
     setTimeout(()=>{
     
         myAlmacen.forEach(element => {
-    document.getElementById("json").innerHTML+=`<div class="child" id="${cont}">
+    document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${cont}">
                                                     <img src="./imgProductos/${myAlmacen[cont].url}" alt="">
                                                             <div>
                                                                 <h3 id="pid${cont}">${myAlmacen[cont].producto}</h3>

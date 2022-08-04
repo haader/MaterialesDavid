@@ -66,7 +66,7 @@
     margin-right: 10%;
     top: 50%;
     z-index: 1;
-    height: 1800px;
+    height: auto;
     width: 90%;
     border-radius: 10px;
     border: 2px solid black;
@@ -100,8 +100,6 @@ position: relative;
 }
 .container .howToBuy,.json
 .seccion, .icon-inner, path
-
-
 {
     color: darkmagenta;
     font-size: xx-large;
@@ -132,7 +130,7 @@ position: relative;
 .paso
 {
     display: flex;
-   
+    flex-direction: column;
     height: 10rem;
     width: 10rem;
     border: 1px solid black;
@@ -140,53 +138,79 @@ position: relative;
     overflow: hidden;
     
 }
-.container
-.explicacion
-.paso
-img{
-    height: 10rem;
+
+
+.container .explicacion .paso figure{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    width: 10rem;
+    height: 8rem;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
+.container .explicacion .paso figure img{
+    
+    position: relative;
+    width: 100%;
+    
+    
+}
+
 .container
 .explicacion
 .paso
 text{
     position: relative;
-    top: -2rem;
-    height: -webkit-fill-available;
+    top:8rem;
+    height: 2rem;
     font-size: 0.9rem;
     display: flex;
     flex-direction: column-reverse;
     background: linear-gradient(45deg, #8b008b, transparent);
     text-align: center;
-    
-    
-}
-
-.iconoVideo {
-    height: 100%;
-    font-weight: 800;
-    color: black;
-}
-
-.LinkVideo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    text-decoration: none;
-    color: darkmagenta;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px black;
-    font-weight: 800;
-    background: linear-gradient(45deg, #ea597b, #71232f);
-    border-radius: 10px;
-    border: 2px solid black;
-    align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    
+    
 }
+
 
 /*JSON*/
+.TagSeleccionado{
+    width: 80%;
+    position: absolute;
+    top: 1.6rem;
+    transform: rotate(-45deg);
+    background: red;
+    color: white;
+    left: -1.7rem;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.input button{
+    border-radius: 4px;
+    
+    height: 2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+.input input{
+    width: 50%;
+    height: 1.7rem;
+    
+
+}
 .json
 {
     display: flex;
@@ -207,12 +231,14 @@ text{
                                     width: 100%;
                                     align-items: center;
                                     justify-content: center;
+                                    text-align: center;
                                 }
 
 .container
 .json
 .child
 {
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;

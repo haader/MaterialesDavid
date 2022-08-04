@@ -6,6 +6,18 @@ function TagSeleccionado(id){
     }catch{
 
     }
-    document.getElementById(id).innerHTML+='<span class="TagSeleccionado" id="TagSeleccionado'+id+'">Seleccionado</span>';
+    document.getElementById(id).innerHTML+='<span class="TagSeleccionado" id="TagSeleccionado'+id+'">  Seleccionado  </span>';
     
 };
+
+function EliminarTagSeleccionado(id){
+
+
+
+}
+
+function EliminarALLTagSeleccionado(){
+
+
+    
+}

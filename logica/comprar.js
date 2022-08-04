@@ -2,8 +2,9 @@
 function comprar0(id){//es apretado en las cards (cartas para comprar) y en el btn agregar (lista de compras) 
     //el problema:el btn agregar tiene un id!
     
-    
+    TagSeleccionado(id);
     let uni=myAlmacen[id].unidades;//no problem
+
     
     
     sumarCarrito();
@@ -37,6 +38,9 @@ contadorProductoSumar();
    sumarTotal(myAlmacen[id].precio);
     
     }
+/*
+
+
 
 //Verduleria 1
     function comprar1(id){//es apretado en las cards (cartas para comprar) y en el btn agregar (lista de compras) 
@@ -279,6 +283,7 @@ contadorProductoSumar();
     }
 
 
+*/
 //FIN
 
 

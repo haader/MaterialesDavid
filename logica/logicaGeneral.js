@@ -459,44 +459,7 @@ function recorrerFacturasWhatsapp(){
         
     })
     console.table(Factura0);
-    Factura1.forEach((element)=>{
-
-        stringProductos+="-"+myVerduleria[Factura1[element]].unidades+" *"+myVerduleria[Factura1[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura1);
-    Factura2.forEach((element)=>{
-
-        stringProductos+="-"+myLimpieza[Factura2[element]].unidades+" *"+myLimpieza[Factura2[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura2);
-    Factura3.forEach((element)=>{
-
-        stringProductos+="-"+myLacteos[Factura3[element]].unidades+" *"+myLacteos[Factura3[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura3);
-    Factura4.forEach((element)=>{
-
-        stringProductos+="-"+myBebidas[Factura4[element]].unidades+" *"+myBebidas[Factura4[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura4);
-    Factura5.forEach((element)=>{
-
-        stringProductos+="-"+myCarniceria[Factura5[element]].unidades+" *"+myCarniceria[Factura5[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura5);
-    Factura6.forEach((element)=>{
-
-        stringProductos+="-"+myOtros[Factura6[element]].unidades+" *"+myOtros[Factura6[element]].name+"* "+saltolinea;
-        
-    })
-    console.table(Factura6);
-
-
+    
 
 }
 
@@ -511,47 +474,7 @@ function recorrerFacturas(){
 
     })
 
-    Factura1.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=1";
-        StringDatosFacturas+="%26can="+myVerduleria[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
-
-    Factura2.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=2";
-        StringDatosFacturas+="%26can="+myLimpieza[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
-
-    Factura3.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=3";
-        StringDatosFacturas+="%26can="+myLacteos[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
-
-    Factura4.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=4";
-        StringDatosFacturas+="%26can="+myBebidas[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
-
-    Factura5.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=5";
-        StringDatosFacturas+="%26can="+myCarniceria[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
-
-    Factura6.forEach((element)=>{
-      StringDatosFacturas+="%26---clp=6";
-        StringDatosFacturas+="%26can="+myOtros[element].unidades;
-        StringDatosFacturas+="%26id="+element;
-
-    })
+    
 }
 
 
