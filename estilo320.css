@@ -122,7 +122,7 @@
     .container
     .json 
     .child{
-        height: 13rem;
+        height: 14rem;
     }
     .container
     .json 
@@ -146,7 +146,16 @@
                     .child 
                     div
                     h3{
-                        height: 1rem;
+                        
+                        margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
                         
                     }
     .container
