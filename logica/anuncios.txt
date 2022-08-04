@@ -1,16 +1,23 @@
 Falta:
 
-1. crear usuario para editar precio de los productos (Crear un crud)
-    agregar variables para que se puedan cambiar los numeros de TELEFONO A DONDE SE REALIZAN LOS PEDIDOS
-    ¿COMO CONFIGURAR LA VERIFICACIÓN?
-    ¿el acceso a la seccion administrador va a estar en la pagina web o es otra web independiente?
-2. editar la seccion "FACTURAS"
-3. Crear una presentacion para vender la pagina web (ESCRITA)
-4. cambiar el logo de la tienda por el del corralon
-5. agregar en el footer los enlaces a los whatsapp correspondientes
-6. los textos quese muestran en el banner de la pagina web se tienen que poder editar
-7. cambiar la imagen 1 de "HowToBuy"
-8. agregar un boton "BORRAR para el div buscador"
-9. editar la lista de la factura para que se vea mejor
-10. agregar descripción de los productos al realizar un "click"
-11. cuando busca se pierde el "tagSeleccionado", -arreglar-
+-SIMPLES
+            4. cambiar el logo de la tienda por el del corralon
+            7. cambiar la imagen 1 de "HowToBuy"
+            8. agregar un boton "BORRAR para el div buscador"
+
+            10. agregar descripción de los productos al realizar un "click"
+            9. editar la lista de la factura para que se vea mejor
+
+-COMPLICADOS (NECESARIOS)
+            1. crear usuario para editar precio de los productos (Crear un crud)
+                agregar variables para que se puedan cambiar los numeros de TELEFONO A DONDE SE REALIZAN LOS PEDIDOS
+                ¿COMO CONFIGURAR LA VERIFICACIÓN?
+                ¿el acceso a la seccion administrador va a estar en la pagina web o es otra web independiente?
+            2. editar la seccion "FACTURAS"
+
+-(necesitamos el crud son simples)
+            11. cuando busca se pierde el "tagSeleccionado", -arreglar-
+            5. agregar en el footer los enlaces a los whatsapp correspondientes (Con variables para ser editados desde el administrador)
+            6. los textos quese muestran en el banner de la pagina web se tienen que poder editar
+
+            3. Crear una presentacion para vender la pagina web (ESCRITA)
