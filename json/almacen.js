@@ -79,6 +79,7 @@ document.getElementById("load").remove() ;
 };
 
 function RenderizarProductos(){
+    cont=0;
 
     division.forEach(element=>{
     
@@ -97,7 +98,7 @@ function RenderizarProductos(){
                                                             <img src="./imgProductos/${myAlmacen[index].url}" alt="">
                                                                     <div>
                                                                         <h3 id="pid${cont}">${myAlmacen[index].producto}</h3>
-                                                                        <button " onclick="comprar0(${index})">Comprar ${myAlmacen[index].precio}$</button>
+                                                                        <button " onclick="comprar0(${cont})">Comprar ${myAlmacen[index].precio}$</button>
                                                                     </div>
                                                         </div>`;    
             cont++;
