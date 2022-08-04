@@ -190,23 +190,26 @@ text{
 }
 
 
-/*JSON*/
-.TagSeleccionado{
-    width: 80%;
-    position: absolute;
-    top: 1.6rem;
-    transform: rotate(-45deg);
-    background: red;
-    color: white;
-    left: -1.7rem;
-}
-
+                        /*JSON*/
+                        .TagSeleccionado{
+                            width: 80%;
+                            position: absolute;
+                            top: 1.6rem;
+                            transform: rotate(-45deg);
+                            background: red;
+                            color: white;
+                            left: -1.7rem;
+                        }
+/*Barra de Busqueda*/
 .input{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    position: sticky;
+    top: 2.2rem; 
+    z-index:1;
 }
 .input button{
     border-radius: 4px;
@@ -216,6 +219,7 @@ text{
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
+    margin-right: 1rem;
 }
 .input input{
     width: 50%;
@@ -223,23 +227,23 @@ text{
     
 
 }
-/*irDivision*/
-.irDivision ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:1rem;
+                    /*irDivision*/
+                    .irDivision ul{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap:1rem;
 
-}
-.irDivision ul li{
-    background: gray;
-    border: 1px solid black;
-    color:white;
-    text-decoration:none;
-    list-style: none;
-    padding: 0.25rem;
-    border-radius: 5px;
-}
+                    }
+                    .irDivision ul li{
+                        background: gray;
+                        border: 1px solid black;
+                        color:white;
+                        text-decoration:none;
+                        list-style: none;
+                        padding: 0.25rem;
+                        border-radius: 5px;
+                    }
 .json
 {
     display: flex;
