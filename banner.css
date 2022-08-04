@@ -17,7 +17,7 @@ nav
 nav ul{
     margin-bottom: 0.5rem;
     padding: 0;
-    animation: mover 20s infinite linear;
+    animation: mover 40s infinite linear;
     
 }
 nav ul span{
