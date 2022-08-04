@@ -4,6 +4,15 @@
 //PARA LA IMAGEN USAMOS EL MISMO NUMERO QUE EL DEL CODIGO DE BARRA 7790387800135.JPG Y LISTO!!!
 
     //VARIABLES 
+    const division=["Aridos","Bloques de Cemento","Cemento y Cales","Hidrofugos","Hierros","Ladrillos","Membranas","Pegamento para Ceramicas"]
+
+    division.forEach(element=>{
+        document.getElementById("irDivision").innerHTML+=`
+
+            <a href="#${element}"><li>${element}</li></a>
+    `;
+    })
+    
 seccion=0;
 var id=0;//empezamos a contar en 0 cada vez que
         //la página es llamada para renderizar los productos de la seccion
@@ -54,20 +63,52 @@ function RenderizarALMACEN(){
    
 
     setTimeout(()=>{
-    
-        myAlmacen.forEach(element => {
-    document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${cont}">
-                                                    <img src="./imgProductos/${myAlmacen[cont].url}" alt="">
-                                                            <div>
-                                                                <h3 id="pid${cont}">${myAlmacen[cont].producto}</h3>
-                                                                <button " onclick="comprar0(${cont})">Comprar ${myAlmacen[cont].precio}$</button>
-                                                            </div>
-                                                </div>`;    
-    cont++;
-})
+
+        RenderizarProductos()
+
 document.getElementById("load").remove() ;
+
+
+
+
+
 },2000);
 
     
     //ocultamos el cargando!!!
 };
+
+function RenderizarProductos(){
+
+    division.forEach(element=>{
+    
+        document.getElementById("contenedorProductos").innerHTML+=`<div class="division" id="${element}">
+                                
+                            <h3>${element}</h3>
+        </div>
+        `;
+
+
+        myAlmacen.forEach((e,index) => {
+
+            if(myAlmacen[index].division==element){
+
+                document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${cont}">
+                                                            <img src="./imgProductos/${myAlmacen[index].url}" alt="">
+                                                                    <div>
+                                                                        <h3 id="pid${cont}">${myAlmacen[index].producto}</h3>
+                                                                        <button " onclick="comprar0(${index})">Comprar ${myAlmacen[index].precio}$</button>
+                                                                    </div>
+                                                        </div>`;    
+            cont++;
+
+            }
+            
+
+    })
+
+
+    
+      
+})
+}

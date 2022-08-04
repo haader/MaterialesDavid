@@ -223,6 +223,23 @@ text{
     
 
 }
+/*irDivision*/
+.irDivision ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+
+}
+.irDivision ul li{
+    background: gray;
+    border: 1px solid black;
+    color:white;
+    text-decoration:none;
+    list-style: none;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
 .json
 {
     display: flex;
@@ -812,6 +829,31 @@ width: 100%;
     display: flex;
     flex-direction: column;
 }
+/*divisiones*/
+.division{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
-
+/*Contactos*/
+.contactos{
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    left: 0.5rem;
+}
+.contactos button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: none;
+    border:none;
+    color: green;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

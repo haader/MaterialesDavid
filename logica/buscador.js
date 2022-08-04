@@ -41,18 +41,9 @@ myAlmacen.forEach((element,index) => {
 
         //pintamos todo el JSON
 
-        myAlmacen.forEach((element,index) => {
+        RenderizarProductos();
+            
     
-                document.getElementById("contenedorProductos").innerHTML+=`<div class="child" id="${index}">
-                <img src="./imgProductos/${myAlmacen[index].url}" alt="">
-                        <div>
-                            <h3 id="pid${index}">${myAlmacen[index].producto}</h3>
-                            <button " onclick="comprar0(${index})">Comprar ${myAlmacen[index].precio}$</button>
-                        </div>
-            </div>`; 
-            
-            
-    });
 
 
     }
