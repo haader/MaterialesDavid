@@ -4,6 +4,16 @@
 
 
 /*----------------*/
+.mybody{
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, #ad125b 30%, #f26e25);
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
 
 .imagen
  {
@@ -26,12 +36,28 @@
 }
 
 .imagen .cartel{
+    top: 1.4rem;
+    font-size: 3rem;
     padding: 0.25rem;
     font-weight: 500;
     border-radius: 10px;
     color: #ffffff;
     position: absolute;
-    top: 5.4rem;
+    background: #ffeb96;
+    text-shadow: 0px 0px 5px #5692d8, 0px 0px 15px #5692d8, 0px 0px 30px #5692d8;
+    box-shadow: 4px 3px 4px 0px #000000a6;
+    animation: changeColor 0s infinite linear alternate-reverse;
+
+}
+
+.imagen .cartel-subtitle{
+    top: 8.4rem;
+    padding: 0.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #ffffff;
+    position: absolute;
+    
     background: #ffeb96;
     /* border: 1px solid black; */
     font-size: 1.5rem;
@@ -170,7 +196,7 @@ text{
     font-size: 0.9rem;
     display: flex;
     flex-direction: column-reverse;
-    background: linear-gradient(45deg, #8b008b, transparent);
+    background: linear-gradient(45deg, #7f2837, #e96666);
     text-align: center;
     justify-content: center;
     
@@ -207,7 +233,7 @@ text{
                             left: -1.7rem;
                         }
 /*Barra de Busqueda*/
-.input{
+.DivBusador{
    
     box-shadow: 3px 3px 5px black;
     padding-top: 0.5rem;
@@ -235,7 +261,7 @@ text{
     display: flex;
     justify-content: center;
 }
-.input button{
+.DivBusador button{
     color: wheat;
     background-color: #ae3a52;
     border-radius: 4px;
@@ -246,7 +272,7 @@ text{
     text-align: center;
     margin-right: 0.25rem;
 }
-.input input{
+.DivBusador input{
     width: 80%;
     height: 1.7rem;
     

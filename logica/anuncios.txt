@@ -1,9 +1,12 @@
 Falta:
 
 -SIMPLES
+##55. CAMBIAR EL TITULO DE LA PAGINA/change tittle to the web page 
+
             4. cambiar el logo de la tienda por el del corralon
             7. cambiar la imagen 1 de "HowToBuy"
             8. agregar un boton "BORRAR para el div buscador"
+            33.cuando se escribe se envia la pantalla arriba para ver el json
 
             10. agregar descripción de los productos al realizar un "click"
             9. editar la lista de la factura para que se vea mejor
@@ -21,3 +24,14 @@ Falta:
             6. los textos quese muestran en el banner de la pagina web se tienen que poder editar
 
             3. Crear una presentacion para vender la pagina web (ESCRITA)
+
+
+
+PEGAR EN LA PAGINA WEB "Herramientas Dev"
+
+blobmaker.app
+getwaves.io
+numorphism.io
+tridiv.com 
+9elements.github.io/fancy-border-radius
+css.glass
